@@ -37,7 +37,7 @@ const CONFIG_3D_MAP = {
   },
   terrain: {
     //地形是否显示
-    url: "http://data.marsgis.cn/terrain", //也可以换成自定义的地形切片服务
+    url: "https://data.marsgis.cn/terrain", //也可以换成自定义的地形切片服务
     visible: true
   },
   basemaps: [
