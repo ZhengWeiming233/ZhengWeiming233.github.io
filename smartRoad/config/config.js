@@ -1,9 +1,21 @@
+// 服务相关配置
 const CONFIG_SERVICE = {
-  baseUrl: 'http://1.15.23.25:8080',
-  tempToken: 'eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjhmNzEwN2QwLTEyNDQtNDNhNS04NTc1LTg2Y2E3Y2IwZTkyMyJ9.J_kiuHyD01B4EKMzUX7SARPylBkpQEldoW6LIPMqE8IoakMxwEiCnyv8A3daplxnsCyKsbMqgkQzrOBccYJYog'
+  loginBaseUrl: 'http://1.15.23.25/api',
+  baseUrl: 'http://1.15.23.25:8080/api',
+  tempToken: '',
+  // 登录获取token的用户名和密码
+  login: {
+    username: 'admin',
+    password: 'admin123'
+  }
+
 }
 
+// 参数设定的配置
 const CONFIG = {
+  // 是否去除返回标段名称中的空格
+  isTrimSectionNameTrim: true,
+  // bim图层名称
   bimLayers: [
     '右侧路基___总_2@组装',
     '广汕公路跨线桥_1_1@广汕公路跨线桥',
@@ -18,5 +30,6 @@ const CONFIG = {
     '右侧测试路基__1@广汕公路跨线桥-右',
     '挖台阶@组装'
   ],
-  tiltLayers: ['Combin']
+  // 倾斜图层名称
+  tiltLayers: ['Combine']
 }
